@@ -126,6 +126,16 @@ func New(product ProductName) *License {
 						Name:        string(VirtualClusterProDistroTranslatePatches),
 						Status:      virtualClusterStatus,
 					},
+					{
+						DisplayName: "KubeVirt Integration",
+						Name:        string(VirtualClusterProDistroTranslatePatches),
+						Status:      virtualClusterStatus,
+					},
+					{
+						DisplayName: "External Secrets Integration",
+						Name:        string(VirtualClusterProDistroIntegrationsExternalSecrets),
+						Status:      virtualClusterStatus,
+					},
 				},
 			},
 			{
