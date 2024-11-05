@@ -141,6 +141,11 @@ func New(product ProductName) *License {
 						Name:        string(VirtualClusterProDistroFips),
 						Status:      virtualClusterStatus,
 					},
+					{
+						DisplayName: "External Database",
+						Name:        string(VirtualClusterProDistroExternalDatabase),
+						Status:      virtualClusterStatus,
+					},
 				},
 			},
 			{
