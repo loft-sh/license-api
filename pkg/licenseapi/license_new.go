@@ -137,6 +137,11 @@ func New(product ProductName) *License {
 						Status:      virtualClusterStatus,
 					},
 					{
+						DisplayName: "Cert Manager Integration",
+						Name:        string(VirtualClusterProDistroIntegrationsCertManager),
+						Status:      virtualClusterStatus,
+					},
+					{
 						DisplayName: "FIPS",
 						Name:        string(VirtualClusterProDistroFips),
 						Status:      virtualClusterStatus,
