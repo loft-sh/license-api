@@ -92,6 +92,6 @@ func GetVClusterFeatures() []FeatureName {
 		VirtualClusterProDistroIntegrationsCertManager,
 		VirtualClusterProDistroExternalDatabase,
 		VirtualClusterProDistroDatabaseConnector,
-		VirtualClusterSleepMode,
+		VirtualClusterProDistroSleepMode,
 	}
 }
