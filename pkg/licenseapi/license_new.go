@@ -197,6 +197,10 @@ func New() *License {
 						DisplayName: "Advanced UI Customizations",
 						Name:        "advanced-ui-customizations",
 					},
+					{
+						DisplayName: "vNode Runtime",
+						Name:        "vnode-runtime",
+					},
 				},
 			},
 		},

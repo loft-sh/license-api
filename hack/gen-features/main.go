@@ -75,6 +75,7 @@ var (
 		"vcp":            "VirtualClusterPro",
 		"vclusters":      "VirtualCluster",
 		"vcluster":       "VirtualCluster",
+		"vnode":          "VNode",
 		"ui":             "UI",
 		"sso":            "SSO",
 		"oidc":           "OIDC",

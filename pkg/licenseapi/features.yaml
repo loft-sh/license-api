@@ -85,3 +85,5 @@ features: # array of features
   displayName: "Custom Branding"
 - name: "advanced-ui-customizations"
   displayName: "Advanced UI Customizations"
+- name: "vnode-runtime"
+  displayName: "vNode Runtime"

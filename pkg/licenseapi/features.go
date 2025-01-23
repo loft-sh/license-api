@@ -90,6 +90,8 @@ const (
 
 	AdvancedUICustomizations FeatureName = "advanced-ui-customizations" // Advanced UI Customizations
 
+	VNodeRuntime FeatureName = "vnode-runtime" // vNode Runtime
+
 )
 
 func GetFeatures() []FeatureName {
@@ -137,5 +139,6 @@ func GetFeatures() []FeatureName {
 		AirGappedMode,
 		CustomBranding,
 		AdvancedUICustomizations,
+		VNodeRuntime,
 	}
 }
