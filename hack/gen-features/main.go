@@ -2,12 +2,11 @@ package main
 
 import (
 	"fmt"
-	"io"
 	"os"
 	"regexp"
 	"strings"
 
-	"github.com/ghodss/yaml"
+	"github.com/loft-sh/admin-apis/hack/internal/featuresyaml"
 	"github.com/loft-sh/admin-apis/pkg/licenseapi"
 )
 
@@ -87,17 +86,7 @@ var (
 )
 
 func main() {
-	featuresYaml, err := os.Open("../../pkg/licenseapi/features.yaml")
-	if err != nil {
-		panic(err)
-	}
-
-	bytes, err := io.ReadAll(featuresYaml)
-	if err != nil {
-		panic(err)
-	}
-
-	features, err := featuresUnmarshal(bytes)
+	features, err := featuresyaml.ReadFeaturesYaml("../../pkg/licenseapi/features.yaml")
 	if err != nil {
 		panic(err)
 	}
@@ -176,15 +165,4 @@ func hyphenatedToCamelCase(name string) string {
 	return reg.ReplaceAllStringFunc(name, func(s string) string {
 		return strings.ToUpper(string(strings.TrimPrefix(s, "-")[0])) + strings.TrimPrefix(s, "-")[1:]
 	})
-}
-
-func featuresUnmarshal(body []byte) ([]*licenseapi.Feature, error) {
-	features := struct {
-		Features []*licenseapi.Feature `json:"features"`
-	}{}
-	err := yaml.Unmarshal(body, &features)
-	if err != nil {
-		return nil, err
-	}
-	return features.Features, nil
 }
