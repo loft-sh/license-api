@@ -201,6 +201,14 @@ func New() *License {
 						DisplayName: "vNode Runtime",
 						Name:        "vnode-runtime",
 					},
+					{
+						DisplayName: "Project Quotas",
+						Name:        "project-quotas",
+					},
+					{
+						DisplayName: "Resolve DNS",
+						Name:        "resolve-dns",
+					},
 				},
 			},
 		},
