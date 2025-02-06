@@ -87,3 +87,7 @@ features: # array of features
   displayName: "Advanced UI Customizations"
 - name: "vnode-runtime"
   displayName: "vNode Runtime"
+- name: "project-quotas"
+  displayName: "Project Quotas"
+- name: "resolve-dns"
+  displayName: "Resolve DNS"
