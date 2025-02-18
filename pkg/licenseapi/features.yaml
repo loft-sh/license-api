@@ -87,3 +87,5 @@ features: # array of features
   displayName: "Advanced UI Customizations"
 - name: "vnode-runtime"
   displayName: "vNode Runtime"
+- name: "Project Quotas"
+  displayName: "project-quotas"

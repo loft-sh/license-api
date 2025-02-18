@@ -92,6 +92,8 @@ const (
 
 	VNodeRuntime FeatureName = "vnode-runtime" // vNode Runtime
 
+	ProjectQuotas FeatureName = "Project Quotas" // project-quotas
+
 )
 
 func GetFeatures() []FeatureName {
@@ -140,5 +142,6 @@ func GetFeatures() []FeatureName {
 		CustomBranding,
 		AdvancedUICustomizations,
 		VNodeRuntime,
+		ProjectQuotas,
 	}
 }
