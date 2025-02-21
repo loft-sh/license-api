@@ -12,6 +12,10 @@ type Feature struct {
 	// +optional
 	DisplayName string `json:"displayName,omitempty"`
 
+	// Preview represents whether the feature can be previewed if a user's license does not allow the feature
+	// +optional
+	Preview bool `json:"preview,omitempty"`
+
 	// Status shows the status of the feature (see type FeatureStatus)
 	// +optional
 	Status string `json:"status,omitempty"`

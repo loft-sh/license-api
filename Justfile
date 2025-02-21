@@ -19,6 +19,9 @@ gen:
     -o ./
   go generate ./...
 
+upload-ci-local:
+  act workflow_dispatch -v -W .github/workflows/upload.yaml -s STRIPE_API_TOKEN=$STRIPE_API_TOKEN
+
 # Check struct memory alignment and print potential improvements
 [no-exit-message]
 check-structalign *ARGS:

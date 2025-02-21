@@ -92,7 +92,13 @@ const (
 
 	VNodeRuntime FeatureName = "vnode-runtime" // vNode Runtime
 
+<<<<<<< HEAD
 	ProjectQuotas FeatureName = "Project Quotas" // project-quotas
+=======
+	ProjectQuotas FeatureName = "project-quotas" // Project Quotas
+
+	ResolveDns FeatureName = "resolve-dns" // Resolve DNS
+>>>>>>> main
 
 )
 
@@ -143,5 +149,6 @@ func GetFeatures() []FeatureName {
 		AdvancedUICustomizations,
 		VNodeRuntime,
 		ProjectQuotas,
+		ResolveDns,
 	}
 }
